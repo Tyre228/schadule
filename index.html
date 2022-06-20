@@ -16,13 +16,13 @@
     <main class="main">
         <div class="schedule">
             <nav class="days">
-                <a href = "#table_monday" class="monday"><p>monday</p></a>
-                <a href = "#table_tuesday" class="tuesday"><p>tueday</p></a>
-                <a href = "#table_wednesday" class="wednesday"><p>wednesday</p></a>
-                <a href = "#table_thousday" class="thousday"><p>thousday</p></a>
-                <a href = "#table_friday" class="friday"><p>friday</p></a>
-                <a href = "#table_saturday" class="saturday"><p>saturday</p></a>
-                <a href = "#table_sunday" class="sunday"><p>sunday</p></a>
+                <a href = "#table_monday" class=" day schedule__day monday"><p>monday</p></a>
+                <a href = "#table_tuesday" class=" day schedule__day tuesday"><p>tueday</p></a>
+                <a href = "#table_wednesday" class=" day schedule__day wednesday"><p>wednesday</p></a>
+                <a href = "#table_thousday" class=" day schedule__day thousday"><p>thousday</p></a>
+                <a href = "#table_friday" class=" day schedule__day friday"><p>friday</p></a>
+                <a href = "#table_saturday" class=" day schedule__day saturday"><p>saturday</p></a>
+                <a href = "#table_sunday" class=" day schedule__day sunday"><p>sunday</p></a>
             </nav>
             <div class="tablecontainer">
                 <div id = "table_monday" class="table table_monday">
@@ -718,6 +718,15 @@
         console.log(width)
         footer.innerHTML = `<footer>${width}</footer>`
         }
+        
+        
+        var days = document.querySelector(".days");
+        var day = documen.querySelector(".day");
+        days.addEventListener("click", function click() {
+                if(event.target.closest(".day")) {
+                    console.log("pressed")
+                }           
+        })
     </script>
 </body>
 </html>

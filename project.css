@@ -25,7 +25,8 @@ body {
 }
 .overimage > span {
     transition:2s all ease;
-    margin-top: 20%;
+    margin-top: 40%;
+    margin-bottom: 40%;
     font-size:200px;
     color:gray;
 }
@@ -54,11 +55,6 @@ body {
 @media (max-width: 1410px) {
     .title {
         font-size:30px;
-    }
-}
-@media (max-width: 1167px) {
-    .column__title {
-        font-size: 10px;
     }
 }
 .header > .title {
@@ -93,6 +89,15 @@ body {
     display: -ms-flex;
     display: -o-flex;
     display: flex;
+}
+@media (max-width: 1024px) {
+    .schedule {
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
+        flex-direction: column;
+    }
 }
 .tablecontainer {
     border:5px solid gray;
@@ -135,6 +140,11 @@ body {
         width:200px;
     }
 }
+@media (max-width: 1118px) {
+    .column_action {
+        width:150px;
+    }
+}
 @media (max-width: 1520px) {
     .column_comments {
         max-width:150px;
@@ -155,8 +165,18 @@ body {
         font-size: 18px;
     }
 }
+@media (max-width: 1167px) {
+    .column > .title {
+        font-size: 14px;
+    }
+}
 .column_duration {
     width:180px;
+}
+@media (max-width: 1520px) {
+    .column_duration {
+        width:130px;
+    }
 }
 .column_point {
     width:100px;
@@ -222,6 +242,24 @@ body {
         font-size:14px;
     }
 }
+@media (max-width: 1167px) {
+    .point__child {
+        font-size:12px;
+    }
+    .action__child {
+        font-size:12px;
+    }
+    .duration__child {
+        font-size:12px;
+    }
+    .condition__child {
+        font-size:10px;
+        letter-spacing: 1px;
+    }
+    .commentline {
+        font-size:12px;
+    }
+}
 .table {
     opacity: 0;
     transition:1s all;
@@ -251,6 +289,11 @@ body {
         max-width: 150px;
         min-width: 150px;
         padding-left:10px;
+    }
+}
+@media (max-width: 1024px) {
+    .days > a {
+        border-left: 2px solid gray;
     }
 }
 .days > a > p {
@@ -301,7 +344,6 @@ body {
 .table:nth-child(7) {
     background-color: whitesmoke;
 }
-
 
 
 
