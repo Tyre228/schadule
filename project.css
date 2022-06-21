@@ -24,6 +24,7 @@ body {
     opacity: 1;
 }
 .overimage > span {
+    position:relative;
     transition:2s all ease;
     margin-top: 20%;
     font-size:200px;
@@ -40,8 +41,8 @@ body {
 @media (max-width: 1200px) {
     .overimage > span {
         transition:2s all ease;
-        margin-top: 40%;
-        font-size:100px;
+        margin-top: 20%;
+        font-size:120px;
         color:gray;
     }
 }
