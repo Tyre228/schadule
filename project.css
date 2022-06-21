@@ -29,6 +29,23 @@ body {
     font-size:200px;
     color:gray;
 }
+@media (max-width: 1500px) {
+    .overimage > span {
+        transition:2s all ease;
+        margin-top: 20%;
+        font-size:200px;
+        color:gray;
+    }
+}
+@media (max-width: 1200px) {
+    .overimage > span {
+        transition:2s all ease;
+        margin-top: 40%;
+        font-size:100px;
+        color:gray;
+    }
+}
+
 .overimage_invisited {
     opacity: 0;
     transition:2.5s all ease;
